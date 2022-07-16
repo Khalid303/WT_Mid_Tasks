@@ -1,0 +1,102 @@
+<?php
+/*
+// Storing data in text file.
+
+if (isset($_POST["submitButton"])) {
+    $name = $_POST["name"];
+    $password = $_POST["password"];
+    $confirmPassword = $_POST["confirmPassword"];
+    $email = $_POST["email"];
+    $gender = $_POST["gender"];
+    $mobileNumber = $_POST["mobileNumber"];
+    $address = $_POST["address"];
+    $role = $_POST["role"];
+    if (empty($name) || empty($password) || empty($confirmPassword) || empty($email) || empty($address)) {
+        echo "Please enter required information.";
+    } else if ($_POST["password"] != $_POST["confirmPassword"]) {
+        echo "Password do not match.";
+    } else {
+        $file = fopen("data.txt", 'a');
+        $user = $name . "|" . $password . "|" . $email . "|" . $gender . "|" . $mobileNumber . "|" . $address . "|" . $role . PHP_EOL;
+        fwrite($file, $user);
+
+        header("Location: Login.php");
+    }
+}
+*/
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+  </head>
+
+  <body>
+    <fieldset>
+      <legend><b>REGISTRATION</b></legend>
+      <form action="Registration.php" method="post">
+        <table width="100%">
+          <tr>
+            <td>Name*</td>
+            <td>:</td>
+            <td><input type="text" value="" name="name" /></td>
+          </tr>
+          <tr>
+            <td>Password*</td>
+            <td>:</td>
+            <td><input type="password" value="" name="password" /></td>
+          </tr>
+          <tr>
+            <td>Confirm Password*</td>
+            <td>:</td>
+            <td><input type="password" value="" name="confirmPassword" /></td>
+          </tr>
+          <tr>
+            <td>Email*</td>
+            <td>:</td>
+            <td><input type="text" value="" name="email" /></td>
+          </tr>
+          <tr>
+            <td>Gender*</td>
+            <td>:</td>
+            <td>
+              <input type="radio" name="gender" value="Male" />Male
+              <input type="radio" name="gender" value="Female" />Female
+              <input type="radio" name="gender" value="Other" />Other
+            </td>
+          </tr>
+          <tr>
+            <td>Mobile Number</td>
+            <td>:</td>
+            <td><input type="number" value="" name="mobileNumber" /></td>
+          </tr>
+          <tr>
+            <td>Address</td>
+            <td>:</td>
+            <td>
+              <textarea name="address" id="" cols="30" rows="5"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>Role*</td>
+            <td>:</td>
+            <td>
+              <input type="radio" name="role" value="Seller" />Seller
+              <input type="radio" name="role" value="Customer" />Customer
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><input type="submit" value="Submit" name="submitButton" /></td>
+          </tr>
+        </table>
+        Already a User?
+        <a href="Login.html">Login</a>
+      </form>
+    </fieldset>
+  </body>
+</html>

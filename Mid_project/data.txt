@@ -1,0 +1,6 @@
+123|123|123@gmail.com|Male|12345678901|Dhaka|
+1234|1234|1234@gmail.com|Female|12345678901|Dhaka|
+abc|123|abc@gmail.com|Other|Dhaka|
+abir|1234|abir@gmail.com|Male|12345678908|Uk|seller
+qwe|qwe|qwe@gmail.com||12345673452|London|Seller
+abir|1234|adwd|Male|123414|Usa|Seller
